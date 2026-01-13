@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\afran\\RiderProjects\\Jugadores-Futbol\\U6_propiedades.csproj": {}
+    "C:\\Users\\dam1\\RiderProjects\\Jugadores-Futbol\\U6_propiedades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\afran\\RiderProjects\\Jugadores-Futbol\\U6_propiedades.csproj": {
+    "C:\\Users\\dam1\\RiderProjects\\Jugadores-Futbol\\U6_propiedades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\afran\\RiderProjects\\Jugadores-Futbol\\U6_propiedades.csproj",
+        "projectUniqueName": "C:\\Users\\dam1\\RiderProjects\\Jugadores-Futbol\\U6_propiedades.csproj",
         "projectName": "U6_propiedades",
-        "projectPath": "C:\\Users\\afran\\RiderProjects\\Jugadores-Futbol\\U6_propiedades.csproj",
-        "packagesPath": "C:\\Users\\afran\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\afran\\RiderProjects\\Jugadores-Futbol\\obj\\",
+        "projectPath": "C:\\Users\\dam1\\RiderProjects\\Jugadores-Futbol\\U6_propiedades.csproj",
+        "packagesPath": "C:\\Users\\dam1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dam1\\RiderProjects\\Jugadores-Futbol\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\afran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dam1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
