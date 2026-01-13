@@ -1,6 +1,11 @@
-﻿var jug1 = new Jugador(7, "Cristiano", Posicion.Delantero);
-var jug2 = new Jugador(10, "Messi", Posicion.Delantero);
-var jug3 = new Jugador(9, "Nicco Williams", Posicion.Delantero);
+﻿Jugador jug1 = new Jugador(7, "Cristiano", Posicion.Delantero);
+Jugador jug2 = new Jugador(10, "Messi", Posicion.Delantero);
+Jugador jug3 = new Jugador(9, "Nicco Williams", Posicion.Delantero);
+
+Equipo equipo = new Equipo (1854,"Real Murcia", "Murcia", new List<Jugador>());
+equipo.AñadirJugadores( jug1, jug2, jug3);
+
+Console.WriteLine(equipo.ToString());
 
 public enum Posicion
 {
@@ -24,16 +29,27 @@ public class Jugador
 
     public override string ToString()
     {
-        return $"Nombre. {Nombre}, Dorsal: {Dorsal}, Posición: {Posicion}";
+        return $"Nombre: {Nombre}, Dorsal: {Dorsal}, Posición: {Posicion}";
     }
         
 }
 
 public class Equipo
 {
+
+
     public string Nombre { get; init; }
-    public string Ciudad { get; private set; }
-    public List<Jugador> Jugadores { get; private set; }
+    public string Ciudad { get; set; }
+    public List<Jugador> Jugadores { get; set; }
+    private int _anioFundacion;
+
+    public Equipo(int anioFundacion, string nombre, string ciudad, List<Jugador> jugadores)
+    {
+        _anioFundacion = anioFundacion;
+        Nombre = nombre;
+        Ciudad = ciudad;
+        Jugadores = jugadores;
+    }
 
     public int AnioFundacion 
     {
@@ -44,7 +60,7 @@ public class Equipo
             {
                 throw new ArgumentException("El valor debe ser mayor a 1800");
             }
-            _anio = value;
+            _anioFundacion = value;
         } 
     }
 
@@ -56,11 +72,27 @@ public class Equipo
         Jugadores.Add(b);
     }
 
-    public void Añadirjugadores (params Jugador[] a)
+    public void AñadirJugadores (params Jugador[] a)
     {
-        for(int i= 0; i<= a.Length; i++)
+        for(int i= 0; i < a.Length; i++)
         {
             Jugadores.Add(a[i]);
         }
+    }
+
+    public string ListarJugadores()
+    {
+        string s = "";
+        foreach (var jugador in Jugadores)
+        {
+            s = s + "\n  " + jugador;
+        }
+
+        return s;
+    }
+
+    public override string ToString()
+    {
+        return $"Nombre: {Nombre}, Ciudad: {Ciudad}, Año de fundación: {_anioFundacion}, \nJugadores en el equipo: {ListarJugadores()}";
     }
 }
